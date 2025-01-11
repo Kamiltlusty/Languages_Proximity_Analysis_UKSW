@@ -1,0 +1,214 @@
+[
+    {
+        "text": "Cancer",
+        "enabled": true
+    },
+    {
+        "text": "Diabetes",
+        "enabled": true
+    },
+    {
+        "text": "Hypertension",
+        "enabled": true
+    },
+    {
+        "text": "Asthma",
+        "enabled": true
+    },
+    {
+        "text": "Flu",
+        "enabled": true
+    },
+    {
+        "text": "COVID-19",
+        "enabled": true
+    },
+    {
+        "text": "Tuberculosis",
+        "enabled": true
+    },
+    {
+        "text": "HIV/AIDS",
+        "enabled": true
+    },
+    {
+        "text": "Malaria",
+        "enabled": true
+    },
+    {
+        "text": "Pneumonia",
+        "enabled": true
+    },
+    {
+        "text": "Alzheimer's Disease",
+        "enabled": true
+    },
+    {
+        "text": "Parkinson's Disease",
+        "enabled": true
+    },
+    {
+        "text": "Epilepsy",
+        "enabled": true
+    },
+    {
+        "text": "Arthritis",
+        "enabled": true
+    },
+    {
+        "text": "Stroke",
+        "enabled": true
+    },
+    {
+        "text": "Heart Disease",
+        "enabled": true
+    },
+    {
+        "text": "Lung Cancer",
+        "enabled": true
+    },
+    {
+        "text": "Kidney Disease",
+        "enabled": true
+    },
+    {
+        "text": "Liver Disease",
+        "enabled": true
+    },
+    {
+        "text": "Multiple Sclerosis",
+        "enabled": true
+    },
+    {
+        "text": "Sickle Cell Anemia",
+        "enabled": true
+    },
+    {
+        "text": "Cystic Fibrosis",
+        "enabled": true
+    },
+    {
+        "text": "Psoriasis",
+        "enabled": true
+    },
+    {
+        "text": "Schizophrenia",
+        "enabled": true
+    },
+    {
+        "text": "Depression",
+        "enabled": true
+    },
+    {
+        "text": "Anxiety",
+        "enabled": true
+    },
+    {
+        "text": "Osteoporosis",
+        "enabled": true
+    },
+    {
+        "text": "Obesity",
+        "enabled": true
+    },
+    {
+        "text": "Tuberculosis",
+        "enabled": true
+    },
+    {
+        "text": "Celiac Disease",
+        "enabled": true
+    },
+    {
+        "text": "Chronic Fatigue Syndrome",
+        "enabled": true
+    },
+    {
+        "text": "Gastritis",
+        "enabled": true
+    },
+    {
+        "text": "Gout",
+        "enabled": true
+    },
+    {
+        "text": "Hepatitis",
+        "enabled": true
+    },
+    {
+        "text": "Crohn's Disease",
+        "enabled": true
+    },
+    {
+        "text": "Irritable Bowel Syndrome",
+        "enabled": true
+    },
+    {
+        "text": "Glaucoma",
+        "enabled": true
+    },
+    {
+        "text": "Migraine",
+        "enabled": true
+    },
+    {
+        "text": "Autism",
+        "enabled": true
+    },
+    {
+        "text": "Dengue Fever",
+        "enabled": true
+    },
+    {
+        "text": "Zika Virus",
+        "enabled": true
+    },
+    {
+        "text": "Cholera",
+        "enabled": true
+    },
+    {
+        "text": "Ebola",
+        "enabled": true
+    },
+    {
+        "text": "Rabies",
+        "enabled": true
+    },
+    {
+        "text": "Tetanus",
+        "enabled": true
+    },
+    {
+        "text": "Chickenpox",
+        "enabled": true
+    },
+    {
+        "text": "Measles",
+        "enabled": true
+    },
+    {
+        "text": "Hernia",
+        "enabled": true
+    },
+    {
+        "text": "Anemia",
+        "enabled": true
+    },
+    {
+        "text": "Gallstones",
+        "enabled": true
+    },
+    {
+        "text": "Hyperthyroidism",
+        "enabled": true
+    },
+    {
+        "text": "Hypothyroidism",
+        "enabled": true
+    },
+    {
+        "text": "Lupus",
+        "enabled": true
+    }
+]

@@ -1,0 +1,202 @@
+[
+    {
+        "text": "Metro",
+        "enabled": true
+    },
+    {
+        "text": "Subway",
+        "enabled": true
+    },
+    {
+        "text": "Bus",
+        "enabled": true
+    },
+    {
+        "text": "Tram",
+        "enabled": true
+    },
+    {
+        "text": "Trolleybus",
+        "enabled": true
+    },
+    {
+        "text": "Train",
+        "enabled": true
+    },
+    {
+        "text": "Monorail",
+        "enabled": true
+    },
+    {
+        "text": "High-Speed Rail",
+        "enabled": true
+    },
+    {
+        "text": "Ferry",
+        "enabled": true
+    },
+    {
+        "text": "Cable Car",
+        "enabled": true
+    },
+    {
+        "text": "Gondola",
+        "enabled": true
+    },
+    {
+        "text": "Taxi",
+        "enabled": true
+    },
+    {
+        "text": "Ride-Sharing",
+        "enabled": true
+    },
+    {
+        "text": "Bike Share",
+        "enabled": true
+    },
+    {
+        "text": "Scooter Share",
+        "enabled": true
+    },
+    {
+        "text": "Airplane",
+        "enabled": true
+    },
+    {
+        "text": "Bullet Train",
+        "enabled": true
+    },
+    {
+        "text": "Commuter Rail",
+        "enabled": true
+    },
+    {
+        "text": "Regional Rail",
+        "enabled": true
+    },
+    {
+        "text": "Intercity Bus",
+        "enabled": true
+    },
+    {
+        "text": "Airport Shuttle",
+        "enabled": true
+    },
+    {
+        "text": "Cruise Ship",
+        "enabled": true
+    },
+    {
+        "text": "Car Rental",
+        "enabled": true
+    },
+    {
+        "text": "Funicular",
+        "enabled": true
+    },
+    {
+        "text": "Hovercraft",
+        "enabled": true
+    },
+    {
+        "text": "Light Rail",
+        "enabled": true
+    },
+    {
+        "text": "Maglev",
+        "enabled": true
+    },
+    {
+        "text": "Shuttle Bus",
+        "enabled": true
+    },
+    {
+        "text": "Vanpool",
+        "enabled": true
+    },
+    {
+        "text": "Electric Scooter",
+        "enabled": true
+    },
+    {
+        "text": "Pedicab",
+        "enabled": true
+    },
+    {
+        "text": "Minibus",
+        "enabled": true
+    },
+    {
+        "text": "Motorbike Taxi",
+        "enabled": true
+    },
+    {
+        "text": "Water Taxi",
+        "enabled": true
+    },
+    {
+        "text": "Shared Van",
+        "enabled": true
+    },
+    {
+        "text": "Auto Rickshaw",
+        "enabled": true
+    },
+    {
+        "text": "Tuk-tuk",
+        "enabled": true
+    },
+    {
+        "text": "Cart",
+        "enabled": true
+    },
+    {
+        "text": "Horse Carriage",
+        "enabled": true
+    },
+    {
+        "text": "Segway",
+        "enabled": true
+    },
+    {
+        "text": "Autonomous Vehicle",
+        "enabled": true
+    },
+    {
+        "text": "Zip Line",
+        "enabled": true
+    },
+    {
+        "text": "Walking Paths",
+        "enabled": true
+    },
+    {
+        "text": "Pipeline Transport",
+        "enabled": true
+    },
+    {
+        "text": "Cargo Ship",
+        "enabled": true
+    },
+    {
+        "text": "Yacht Charter",
+        "enabled": true
+    },
+    {
+        "text": "Private Jet",
+        "enabled": true
+    },
+    {
+        "text": "Helicopter Taxi",
+        "enabled": true
+    },
+    {
+        "text": "Hyperloop",
+        "enabled": true
+    },
+    {
+        "text": "Cargo Bike",
+        "enabled": true
+    }
+]

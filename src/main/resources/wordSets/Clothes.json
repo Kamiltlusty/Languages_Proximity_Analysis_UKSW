@@ -1,0 +1,202 @@
+[
+    {
+        "text": "T-shirt",
+        "enabled": true
+    },
+    {
+        "text": "Jeans",
+        "enabled": true
+    },
+    {
+        "text": "Jacket",
+        "enabled": true
+    },
+    {
+        "text": "Sweater",
+        "enabled": true
+    },
+    {
+        "text": "Shirt",
+        "enabled": true
+    },
+    {
+        "text": "Blouse",
+        "enabled": true
+    },
+    {
+        "text": "Skirt",
+        "enabled": true
+    },
+    {
+        "text": "Dress",
+        "enabled": true
+    },
+    {
+        "text": "Shorts",
+        "enabled": true
+    },
+    {
+        "text": "Pants",
+        "enabled": true
+    },
+    {
+        "text": "Socks",
+        "enabled": true
+    },
+    {
+        "text": "Hat",
+        "enabled": true
+    },
+    {
+        "text": "Scarf",
+        "enabled": true
+    },
+    {
+        "text": "Gloves",
+        "enabled": true
+    },
+    {
+        "text": "Belt",
+        "enabled": true
+    },
+    {
+        "text": "Shoes",
+        "enabled": true
+    },
+    {
+        "text": "Sneakers",
+        "enabled": true
+    },
+    {
+        "text": "Boots",
+        "enabled": true
+    },
+    {
+        "text": "Sandals",
+        "enabled": true
+    },
+    {
+        "text": "Coat",
+        "enabled": true
+    },
+    {
+        "text": "Underwear",
+        "enabled": true
+    },
+    {
+        "text": "Bra",
+        "enabled": true
+    },
+    {
+        "text": "Boxers",
+        "enabled": true
+    },
+    {
+        "text": "Cap",
+        "enabled": true
+    },
+    {
+        "text": "Vest",
+        "enabled": true
+    },
+    {
+        "text": "Cardigan",
+        "enabled": true
+    },
+    {
+        "text": "Tank top",
+        "enabled": true
+    },
+    {
+        "text": "Pajamas",
+        "enabled": true
+    },
+    {
+        "text": "Leggings",
+        "enabled": true
+    },
+    {
+        "text": "Overalls",
+        "enabled": true
+    },
+    {
+        "text": "Tracksuit",
+        "enabled": true
+    },
+    {
+        "text": "Blazer",
+        "enabled": true
+    },
+    {
+        "text": "Tie",
+        "enabled": true
+    },
+    {
+        "text": "Bow tie",
+        "enabled": true
+    },
+    {
+        "text": "Hoodie",
+        "enabled": true
+    },
+    {
+        "text": "Raincoat",
+        "enabled": true
+    },
+    {
+        "text": "Bathrobe",
+        "enabled": true
+    },
+    {
+        "text": "Swimsuit",
+        "enabled": true
+    },
+    {
+        "text": "Bikini",
+        "enabled": true
+    },
+    {
+        "text": "Tights",
+        "enabled": true
+    },
+    {
+        "text": "Kimono",
+        "enabled": true
+    },
+    {
+        "text": "Poncho",
+        "enabled": true
+    },
+    {
+        "text": "Shawl",
+        "enabled": true
+    },
+    {
+        "text": "Camisole",
+        "enabled": true
+    },
+    {
+        "text": "Lingerie",
+        "enabled": true
+    },
+    {
+        "text": "Suit",
+        "enabled": true
+    },
+    {
+        "text": "Pocket square",
+        "enabled": true
+    },
+    {
+        "text": "Suspenders",
+        "enabled": true
+    },
+    {
+        "text": "Glasses",
+        "enabled": true
+    },
+    {
+        "text": "Mittens",
+        "enabled": true
+    }
+]

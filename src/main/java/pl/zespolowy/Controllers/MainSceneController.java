@@ -9,16 +9,11 @@ import pl.zespolowy.*;
 
 
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.stream.Stream;
-
 
 
 @Getter
@@ -101,7 +96,7 @@ public class MainSceneController {
     public void handleTranslate() {
         String wordSet = "jabłko; banan; cytryna";
 
-        Translation translation = translator.translate(wordSet, "pl", "en");
+        TranslationOld translation = translator.translate(wordSet, "pl", "en");
 
         System.out.println("----- LIST -------- ");
         for (String str : translation.toList()) {

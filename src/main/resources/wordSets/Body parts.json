@@ -1,0 +1,198 @@
+[
+    {
+        "text": "head",
+        "enabled": true
+    },
+    {
+        "text": "hair",
+        "enabled": true
+    },
+    {
+        "text": "eye",
+        "enabled": true
+    },
+    {
+        "text": "ear",
+        "enabled": true
+    },
+    {
+        "text": "nose",
+        "enabled": true
+    },
+    {
+        "text": "mouth",
+        "enabled": true
+    },
+    {
+        "text": "tooth",
+        "enabled": true
+    },
+    {
+        "text": "tongue",
+        "enabled": true
+    },
+    {
+        "text": "neck",
+        "enabled": true
+    },
+    {
+        "text": "shoulder",
+        "enabled": true
+    },
+    {
+        "text": "arm",
+        "enabled": true
+    },
+    {
+        "text": "elbow",
+        "enabled": true
+    },
+    {
+        "text": "wrist",
+        "enabled": true
+    },
+    {
+        "text": "hand",
+        "enabled": true
+    },
+    {
+        "text": "finger",
+        "enabled": true
+    },
+    {
+        "text": "thumb",
+        "enabled": true
+    },
+    {
+        "text": "chest",
+        "enabled": true
+    },
+    {
+        "text": "back",
+        "enabled": true
+    },
+    {
+        "text": "stomach",
+        "enabled": true
+    },
+    {
+        "text": "waist",
+        "enabled": true
+    },
+    {
+        "text": "hip",
+        "enabled": true
+    },
+    {
+        "text": "leg",
+        "enabled": true
+    },
+    {
+        "text": "knee",
+        "enabled": true
+    },
+    {
+        "text": "ankle",
+        "enabled": true
+    },
+    {
+        "text": "foot",
+        "enabled": true
+    },
+    {
+        "text": "toe",
+        "enabled": true
+    },
+    {
+        "text": "heel",
+        "enabled": true
+    },
+    {
+        "text": "skin",
+        "enabled": true
+    },
+    {
+        "text": "bone",
+        "enabled": true
+    },
+    {
+        "text": "muscle",
+        "enabled": true
+    },
+    {
+        "text": "heart",
+        "enabled": true
+    },
+    {
+        "text": "lung",
+        "enabled": true
+    },
+    {
+        "text": "brain",
+        "enabled": true
+    },
+    {
+        "text": "throat",
+        "enabled": true
+    },
+    {
+        "text": "cheek",
+        "enabled": true
+    },
+    {
+        "text": "chin",
+        "enabled": true
+    },
+    {
+        "text": "forehead",
+        "enabled": true
+    },
+    {
+        "text": "lip",
+        "enabled": true
+    },
+    {
+        "text": "eyebrow",
+        "enabled": true
+    },
+    {
+        "text": "eyelash",
+        "enabled": true
+    },
+    {
+        "text": "jaw",
+        "enabled": true
+    },
+    {
+        "text": "palm",
+        "enabled": true
+    },
+    {
+        "text": "nail",
+        "enabled": true
+    },
+    {
+        "text": "armpit",
+        "enabled": true
+    },
+    {
+        "text": "spine",
+        "enabled": true
+    },
+    {
+        "text": "rib",
+        "enabled": true
+    },
+    {
+        "text": "liver",
+        "enabled": true
+    },
+    {
+        "text": "kidney",
+        "enabled": true
+    },
+    {
+        "text": "elbow",
+        "enabled": true
+    }
+]

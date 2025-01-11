@@ -4,13 +4,12 @@ import lombok.Getter;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
 
 @Getter
-public class Translation {
+public class TranslationOld {
     private String text;
 
-    public Translation(String text) {
+    public TranslationOld(String text) {
         this.text = text;
 
         int[] invalidCodes = { 10 };

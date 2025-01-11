@@ -1,0 +1,202 @@
+[
+    {
+        "text": "Pencil",
+        "enabled": true
+    },
+    {
+        "text": "Pen",
+        "enabled": true
+    },
+    {
+        "text": "Eraser",
+        "enabled": true
+    },
+    {
+        "text": "Notebook",
+        "enabled": true
+    },
+    {
+        "text": "Ruler",
+        "enabled": true
+    },
+    {
+        "text": "Marker",
+        "enabled": true
+    },
+    {
+        "text": "Highlighter",
+        "enabled": true
+    },
+    {
+        "text": "Stapler",
+        "enabled": true
+    },
+    {
+        "text": "Paper",
+        "enabled": true
+    },
+    {
+        "text": "Scissors",
+        "enabled": true
+    },
+    {
+        "text": "Glue",
+        "enabled": true
+    },
+    {
+        "text": "Sharpener",
+        "enabled": true
+    },
+    {
+        "text": "Binder",
+        "enabled": true
+    },
+    {
+        "text": "Folder",
+        "enabled": true
+    },
+    {
+        "text": "Calculator",
+        "enabled": true
+    },
+    {
+        "text": "Crayons",
+        "enabled": true
+    },
+    {
+        "text": "Colored Pencils",
+        "enabled": true
+    },
+    {
+        "text": "Paint",
+        "enabled": true
+    },
+    {
+        "text": "Brush",
+        "enabled": true
+    },
+    {
+        "text": "Whiteboard",
+        "enabled": true
+    },
+    {
+        "text": "Chalk",
+        "enabled": true
+    },
+    {
+        "text": "Backpack",
+        "enabled": true
+    },
+    {
+        "text": "Pencil Case",
+        "enabled": true
+    },
+    {
+        "text": "Index Cards",
+        "enabled": true
+    },
+    {
+        "text": "Post-it Notes",
+        "enabled": true
+    },
+    {
+        "text": "Tape",
+        "enabled": true
+    },
+    {
+        "text": "Compass",
+        "enabled": true
+    },
+    {
+        "text": "Protractor",
+        "enabled": true
+    },
+    {
+        "text": "Geometry Set",
+        "enabled": true
+    },
+    {
+        "text": "Clipboard",
+        "enabled": true
+    },
+    {
+        "text": "Desk Organizer",
+        "enabled": true
+    },
+    {
+        "text": "Paper Clips",
+        "enabled": true
+    },
+    {
+        "text": "Rubber Bands",
+        "enabled": true
+    },
+    {
+        "text": "Sticky Notes",
+        "enabled": true
+    },
+    {
+        "text": "Marking Tape",
+        "enabled": true
+    },
+    {
+        "text": "Push Pins",
+        "enabled": true
+    },
+    {
+        "text": "Push Pin Board",
+        "enabled": true
+    },
+    {
+        "text": "Paper Cutter",
+        "enabled": true
+    },
+    {
+        "text": "File",
+        "enabled": true
+    },
+    {
+        "text": "Dividers",
+        "enabled": true
+    },
+    {
+        "text": "Folders with Tabs",
+        "enabled": true
+    },
+    {
+        "text": "Correction Tape",
+        "enabled": true
+    },
+    {
+        "text": "Notepad",
+        "enabled": true
+    },
+    {
+        "text": "Flash Cards",
+        "enabled": true
+    },
+    {
+        "text": "Bulletin Board",
+        "enabled": true
+    },
+    {
+        "text": "File Folder",
+        "enabled": true
+    },
+    {
+        "text": "Drawing Paper",
+        "enabled": true
+    },
+    {
+        "text": "Art Supplies",
+        "enabled": true
+    },
+    {
+        "text": "Calculator Battery",
+        "enabled": true
+    },
+    {
+        "text": "Whiteboard Marker",
+        "enabled": true
+    }
+]

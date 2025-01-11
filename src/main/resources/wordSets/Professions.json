@@ -1,202 +1,198 @@
 [
     {
-        "text": "Carrot",
+        "text": "Doctor",
         "enabled": true
     },
     {
-        "text": "Potato",
+        "text": "Teacher",
         "enabled": true
     },
     {
-        "text": "Tomato",
+        "text": "Engineer",
         "enabled": true
     },
     {
-        "text": "Onion",
+        "text": "Nurse",
         "enabled": true
     },
     {
-        "text": "Spinach",
+        "text": "Accountant",
         "enabled": true
     },
     {
-        "text": "Cucumber",
+        "text": "Artist",
         "enabled": true
     },
     {
-        "text": "Cabbage",
+        "text": "Lawyer",
         "enabled": true
     },
     {
-        "text": "Lettuce",
+        "text": "Scientist",
         "enabled": true
     },
     {
-        "text": "Broccoli",
+        "text": "Chef",
         "enabled": true
     },
     {
-        "text": "Cauliflower",
+        "text": "Pharmacist",
         "enabled": true
     },
     {
-        "text": "Bell Pepper",
+        "text": "Mechanic",
         "enabled": true
     },
     {
-        "text": "Zucchini",
+        "text": "Architect",
         "enabled": true
     },
     {
-        "text": "Eggplant",
+        "text": "Dentist",
         "enabled": true
     },
     {
-        "text": "Asparagus",
+        "text": "Journalist",
         "enabled": true
     },
     {
-        "text": "Garlic",
+        "text": "Librarian",
         "enabled": true
     },
     {
-        "text": "Ginger",
+        "text": "Pilot",
         "enabled": true
     },
     {
-        "text": "Radish",
+        "text": "Veterinarian",
         "enabled": true
     },
     {
-        "text": "Beetroot",
+        "text": "Translator",
         "enabled": true
     },
     {
-        "text": "Sweet Potato",
+        "text": "Plumber",
         "enabled": true
     },
     {
-        "text": "Peas",
+        "text": "Electrician",
         "enabled": true
     },
     {
-        "text": "Corn",
+        "text": "Carpenter",
         "enabled": true
     },
     {
-        "text": "Chili",
+        "text": "Firefighter",
         "enabled": true
     },
     {
-        "text": "Leek",
+        "text": "Police Officer",
         "enabled": true
     },
     {
-        "text": "Kale",
+        "text": "Farmer",
         "enabled": true
     },
     {
-        "text": "Pumpkin",
+        "text": "Psychologist",
         "enabled": true
     },
     {
-        "text": "Squash",
+        "text": "Graphic Designer",
         "enabled": true
     },
     {
-        "text": "Brussels Sprout",
+        "text": "Software Developer",
         "enabled": true
     },
     {
-        "text": "Artichoke",
+        "text": "Data Analyst",
         "enabled": true
     },
     {
-        "text": "Fennel",
+        "text": "Social Worker",
         "enabled": true
     },
     {
-        "text": "Celery",
+        "text": "Athlete",
         "enabled": true
     },
     {
-        "text": "Mushroom",
+        "text": "Actor",
         "enabled": true
     },
     {
-        "text": "Turnip",
+        "text": "Musician",
         "enabled": true
     },
     {
-        "text": "Chard",
+        "text": "Photographer",
         "enabled": true
     },
     {
-        "text": "Rutabaga",
+        "text": "Chef",
         "enabled": true
     },
     {
-        "text": "Parsnip",
+        "text": "Bartender",
         "enabled": true
     },
     {
-        "text": "Okra",
+        "text": "Salesperson",
         "enabled": true
     },
     {
-        "text": "Bok Choy",
+        "text": "Hairdresser",
         "enabled": true
     },
     {
-        "text": "Scallion",
+        "text": "Massage Therapist",
         "enabled": true
     },
     {
-        "text": "Watercress",
+        "text": "Taxi Driver",
         "enabled": true
     },
     {
-        "text": "Shallot",
+        "text": "Receptionist",
         "enabled": true
     },
     {
-        "text": "Endive",
+        "text": "Event Planner",
         "enabled": true
     },
     {
-        "text": "Arugula",
+        "text": "Flight Attendant",
         "enabled": true
     },
     {
-        "text": "Collard Greens",
+        "text": "Real Estate Agent",
         "enabled": true
     },
     {
-        "text": "Mustard Greens",
+        "text": "Marketing Specialist",
         "enabled": true
     },
     {
-        "text": "Dandelion Greens",
+        "text": "Courier",
         "enabled": true
     },
     {
-        "text": "Alfalfa",
+        "text": "Paralegal",
         "enabled": true
     },
     {
-        "text": "Taro",
+        "text": "Entrepreneur",
         "enabled": true
     },
     {
-        "text": "Chayote",
+        "text": "Scientist",
         "enabled": true
     },
     {
-        "text": "Yam",
-        "enabled": true
-    },
-    {
-        "text": "Kohlrabi",
+        "text": "Economist",
         "enabled": true
     }
 ]

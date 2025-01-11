@@ -1,0 +1,206 @@
+[
+    {
+        "text": "Apartment",
+        "enabled": true
+    },
+    {
+        "text": "Hospital",
+        "enabled": true
+    },
+    {
+        "text": "School",
+        "enabled": true
+    },
+    {
+        "text": "Library",
+        "enabled": true
+    },
+    {
+        "text": "Church",
+        "enabled": true
+    },
+    {
+        "text": "Bank",
+        "enabled": true
+    },
+    {
+        "text": "Hotel",
+        "enabled": true
+    },
+    {
+        "text": "Office",
+        "enabled": true
+    },
+    {
+        "text": "Factory",
+        "enabled": true
+    },
+    {
+        "text": "Store",
+        "enabled": true
+    },
+    {
+        "text": "Museum",
+        "enabled": true
+    },
+    {
+        "text": "Theater",
+        "enabled": true
+    },
+    {
+        "text": "Restaurant",
+        "enabled": true
+    },
+    {
+        "text": "Café",
+        "enabled": true
+    },
+    {
+        "text": "Stadium",
+        "enabled": true
+    },
+    {
+        "text": "Warehouse",
+        "enabled": true
+    },
+    {
+        "text": "Garage",
+        "enabled": true
+    },
+    {
+        "text": "Mall",
+        "enabled": true
+    },
+    {
+        "text": "Gym",
+        "enabled": true
+    },
+    {
+        "text": "Arena",
+        "enabled": true
+    },
+    {
+        "text": "Airport",
+        "enabled": true
+    },
+    {
+        "text": "Train Station",
+        "enabled": true
+    },
+    {
+        "text": "Subway Station",
+        "enabled": true
+    },
+    {
+        "text": "Post Office",
+        "enabled": true
+    },
+    {
+        "text": "Pharmacy",
+        "enabled": true
+    },
+    {
+        "text": "Police Station",
+        "enabled": true
+    },
+    {
+        "text": "Fire Station",
+        "enabled": true
+    },
+    {
+        "text": "Embassy",
+        "enabled": true
+    },
+    {
+        "text": "Court House",
+        "enabled": true
+    },
+    {
+        "text": "Conference Center",
+        "enabled": true
+    },
+    {
+        "text": "Convention Center",
+        "enabled": true
+    },
+    {
+        "text": "Farmhouse",
+        "enabled": true
+    },
+    {
+        "text": "Mansion",
+        "enabled": true
+    },
+    {
+        "text": "Castle",
+        "enabled": true
+    },
+    {
+        "text": "Chalet",
+        "enabled": true
+    },
+    {
+        "text": "Bungalow",
+        "enabled": true
+    },
+    {
+        "text": "Cottage",
+        "enabled": true
+    },
+    {
+        "text": "Villa",
+        "enabled": true
+    },
+    {
+        "text": "Skyscraper",
+        "enabled": true
+    },
+    {
+        "text": "Pavilion",
+        "enabled": true
+    },
+    {
+        "text": "Greenhouse",
+        "enabled": true
+    },
+    {
+        "text": "Condo",
+        "enabled": true
+    },
+    {
+        "text": "Duplex",
+        "enabled": true
+    },
+    {
+        "text": "Townhouse",
+        "enabled": true
+    },
+    {
+        "text": "Loft",
+        "enabled": true
+    },
+    {
+        "text": "Cabin",
+        "enabled": true
+    },
+    {
+        "text": "Ranch",
+        "enabled": true
+    },
+    {
+        "text": "Apartment Complex",
+        "enabled": true
+    },
+    {
+        "text": "Residential Building",
+        "enabled": true
+    },
+    {
+        "text": "Commercial Building",
+        "enabled": true
+    },
+    {
+        "text": "Industrial Building",
+        "enabled": true
+    }
+]

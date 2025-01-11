@@ -1,30 +1,15 @@
-package pl.zespolowy;
+package pl.zespolowy.Words;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.util.Arrays;
 import java.util.List;
 
-@Getter
-@Setter
 public class WordSet {
     private String title;
     private List<Word> words;
     private boolean enabled;
-
-    public WordSet(String title) {
-        this.title = title;
-        this.enabled = false;
-    }
-    public WordSet(String title, List<Word> words) {
-        this.title = title;
-        this.words = words;
-        this.enabled = false;
-    }
 
     public WordSet(String title, String jsonString) {
         this.title = title;
@@ -36,6 +21,11 @@ public class WordSet {
         this.title = title;
         Deserialize(jsonString);
         this.enabled = enabled;
+    }
+
+    public WordSet(String title, String[] words) {
+        this.title = title;
+        this.words = Arrays.stream(words).map(Word::new).toList();
     }
 
     private void Deserialize(String jsonString) {
@@ -59,7 +49,7 @@ public class WordSet {
         return words;
     }
 
-    //    public String format(TranslatorType translatorType) {
+//    public String format(TranslatorType translatorType) {
 //        StringBuilder sb = new StringBuilder();
 //
 //        switch (translatorType) {
@@ -98,6 +88,8 @@ public class WordSet {
 //
 //    private void formatGemini(StringBuilder sb) {}
 
+
+
     public void addWord(Word word) {
         words.add(word);
     }
@@ -117,14 +109,5 @@ public class WordSet {
             System.out.println(word.getText());
         }
         System.out.println();
-    }
-
-    public void initLanguages(String title, String path) {
-        try {
-            String content = Files.readString(Paths.get(path));
-            LanguageSet languageSet = new LanguageSet(title, content);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 }

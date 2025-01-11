@@ -23,9 +23,8 @@ public class Main extends Application {
         Translator translator = new Translator();
         controller.setTranslator(translator);
 
-
-
-
+//        translator = new DeepLTranslator();
+//        controller.setTranslator(translator);
 
         Scene scene = new Scene(root, 800, 600);
 
@@ -43,26 +42,6 @@ public class Main extends Application {
         WordsProximityNormalizer wordsProximityNormalizer = new WordsProximityNormalizer(languageProximity, wst);
         ProximityResultJSONExporter proximityResultJSONExporter = new ProximityResultJSONExporter(wordsProximityNormalizer);
         proximityResultJSONExporter.createJson();
-//        Map<String, Map<String, LanguageProximityResult>> proximityBetweenTwoLanguagesMapByTopic = languageProximity.getProximityBetweenTwoLanguagesMapByTopic();
-//        proximityBetweenTwoLanguagesMapByTopic.entrySet().forEach(a -> System.out.println(a.toString()));
-
-
-
-        //String result = translator.translate("dupa", "pl", "en");
-        //System.out.println(result);
-
         launch();
-        //TodoClient todoClient = new TodoClient("technology");
-//
-        //Set<String> wordSet = todoClient.findAll();
-        //for (String word : wordSet) {
-        //    System.out.println(word);
-        //}
-//
-        //System.out.println(wordSet.size());
-
-
     }
-
-
 }

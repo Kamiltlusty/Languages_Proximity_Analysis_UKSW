@@ -22,7 +22,7 @@ public class Translator {
         driver = new ChromeDriver(options);
     }
 
-    public Translation translate(String content, String sourceLanguage, String targetLanguage) {
+    public TranslationOld translate(String content, String sourceLanguage, String targetLanguage) {
         String baseUrl = "https://translate.google.com/?sl=" + sourceLanguage + "&tl=" + targetLanguage + "&op=translate";
         driver.get(baseUrl);
 
@@ -39,7 +39,7 @@ public class Translator {
             try {
                 Thread.sleep(10); // Sleep for 10 milliseconds
                 var outputBox = driver.findElement(By.xpath("//*[@id=\"yDmH0d\"]/c-wiz/div/div[2]/c-wiz/div[2]/c-wiz/div[1]/div[2]/div[2]/c-wiz/div/div[6]/div/div[1]/span[1]"));
-                return new Translation(outputBox.getText());
+                return new TranslationOld(outputBox.getText());
             } catch (Exception e) {}
         }
 

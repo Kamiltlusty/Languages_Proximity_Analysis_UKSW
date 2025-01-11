@@ -1,0 +1,202 @@
+[
+    {
+        "text": "happy",
+        "enabled": true
+    },
+    {
+        "text": "sad",
+        "enabled": true
+    },
+    {
+        "text": "angry",
+        "enabled": true
+    },
+    {
+        "text": "excited",
+        "enabled": true
+    },
+    {
+        "text": "fearful",
+        "enabled": true
+    },
+    {
+        "text": "hopeful",
+        "enabled": true
+    },
+    {
+        "text": "anxious",
+        "enabled": true
+    },
+    {
+        "text": "grateful",
+        "enabled": true
+    },
+    {
+        "text": "proud",
+        "enabled": true
+    },
+    {
+        "text": "lonely",
+        "enabled": true
+    },
+    {
+        "text": "confident",
+        "enabled": true
+    },
+    {
+        "text": "surprised",
+        "enabled": true
+    },
+    {
+        "text": "jealous",
+        "enabled": true
+    },
+    {
+        "text": "curious",
+        "enabled": true
+    },
+    {
+        "text": "relieved",
+        "enabled": true
+    },
+    {
+        "text": "disappointed",
+        "enabled": true
+    },
+    {
+        "text": "ashamed",
+        "enabled": true
+    },
+    {
+        "text": "guilty",
+        "enabled": true
+    },
+    {
+        "text": "embarrassed",
+        "enabled": true
+    },
+    {
+        "text": "content",
+        "enabled": true
+    },
+    {
+        "text": "bored",
+        "enabled": true
+    },
+    {
+        "text": "overwhelmed",
+        "enabled": true
+    },
+    {
+        "text": "nervous",
+        "enabled": true
+    },
+    {
+        "text": "trusting",
+        "enabled": true
+    },
+    {
+        "text": "loving",
+        "enabled": true
+    },
+    {
+        "text": "hopeful",
+        "enabled": true
+    },
+    {
+        "text": "resentful",
+        "enabled": true
+    },
+    {
+        "text": "optimistic",
+        "enabled": true
+    },
+    {
+        "text": "inspired",
+        "enabled": true
+    },
+    {
+        "text": "peaceful",
+        "enabled": true
+    },
+    {
+        "text": "frustrated",
+        "enabled": true
+    },
+    {
+        "text": "hurt",
+        "enabled": true
+    },
+    {
+        "text": "confused",
+        "enabled": true
+    },
+    {
+        "text": "doubtful",
+        "enabled": true
+    },
+    {
+        "text": "empathetic",
+        "enabled": true
+    },
+    {
+        "text": "joyful",
+        "enabled": true
+    },
+    {
+        "text": "sympathetic",
+        "enabled": true
+    },
+    {
+        "text": "humiliated",
+        "enabled": true
+    },
+    {
+        "text": "envious",
+        "enabled": true
+    },
+    {
+        "text": "calm",
+        "enabled": true
+    },
+    {
+        "text": "shy",
+        "enabled": true
+    },
+    {
+        "text": "insecure",
+        "enabled": true
+    },
+    {
+        "text": "determined",
+        "enabled": true
+    },
+    {
+        "text": "amused",
+        "enabled": true
+    },
+    {
+        "text": "angst",
+        "enabled": true
+    },
+    {
+        "text": "ecstatic",
+        "enabled": true
+    },
+    {
+        "text": "miserable",
+        "enabled": true
+    },
+    {
+        "text": "panicked",
+        "enabled": true
+    },
+    {
+        "text": "apathetic",
+        "enabled": true
+    },
+    {
+        "text": "worried",
+        "enabled": true
+    }
+]
