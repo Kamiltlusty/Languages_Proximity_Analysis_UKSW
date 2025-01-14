@@ -6,10 +6,7 @@ import pl.zespolowy.Language;
 import pl.zespolowy.Words.Word;
 import pl.zespolowy.Words.WordSet;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Getter
@@ -37,25 +34,25 @@ public class WordSetsRegrouper {
                 ));
     }
 
-    public Set<Map<Language, Word>> mapToSet(Map<Language, WordSet> wordSetsInDifferentLanguages) {
-        Set<Map<Language, Word>> mapSet = new HashSet<>();
+    public Set<Map<Language, Word>> mapToSet(Map<Language, WordSet> wsInDiffLangs) {
+        Set<Map<Language, Word>> mapSet = new LinkedHashSet<>();
         // find wordSet size
-        int size = wordSetsInDifferentLanguages.values().stream()
+        int size = wsInDiffLangs.values().stream()
                 .findFirst()
                 .map(w -> w.getWords().size())
                 .orElse(-1);
 
         // go through each wordSet and take i-th Word
         for (int i = 0; i < size; i++) {
-            Map<Language, Word> languageWordMap = getLanguageWordMap(wordSetsInDifferentLanguages, i);
+            Map<Language, Word> languageWordMap = getLanguageWordMap(wsInDiffLangs, i);
             mapSet.add(languageWordMap);
         }
         return mapSet;
     }
     
 
-    private Map<Language, Word> getLanguageWordMap(Map<Language, WordSet> wordSetsInDifferentLanguages, int i) {
-        return wordSetsInDifferentLanguages.entrySet().stream()
+    private Map<Language, Word> getLanguageWordMap(Map<Language, WordSet> wsInDiffLangs, int i) {
+        return wsInDiffLangs.entrySet().stream()
                 .collect(Collectors.toMap(
                         Map.Entry::getKey,
                         e -> e.getValue().getWords().get(i)

@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class Translation {
@@ -46,7 +47,7 @@ public class Translation {
             return false;
         }
 
-        this.translations = new HashMap<String, String>();
+        this.translations = new LinkedHashMap<>();
         for (int i = 0; i < source.length; i++) {
             this.translations.put(source[i], target[i]);
         }

@@ -36,8 +36,13 @@ public class Main extends Application {
         LanguageSimilarityCalculator languageProximity = new LanguageSimilarityCalculator(wordSetsRegroup);
         languageProximity.countProximityAndFillLPRClasses();
         WordsProximityNormalizer wordsProximityNormalizer = new WordsProximityNormalizer(languageProximity, wst);
+
         ProximityResultJSONExporter proximityResultJSONExporter = new ProximityResultJSONExporter(wordsProximityNormalizer);
-        proximityResultJSONExporter.createJson();
+        proximityResultJSONExporter.createJsonByTopics();
+        System.out.println("Final Result");
+        wordsProximityNormalizer.print();
+
+
         launch();
     }
 }

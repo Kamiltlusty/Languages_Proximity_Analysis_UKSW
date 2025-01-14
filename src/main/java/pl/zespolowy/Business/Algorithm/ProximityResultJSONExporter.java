@@ -13,8 +13,8 @@ public class ProximityResultJSONExporter {
         this.wordsProximityNormalizer = wordsProximityNormalizer;
     }
 
-    public void createJson() throws JsonProcessingException {
-        var mapPreparedForJson = wordsProximityNormalizer.getMapPreparedForJson();
+    public void createJsonByTopics() throws JsonProcessingException {
+        var mapPreparedForJson = wordsProximityNormalizer.getResultByTopic();
         String mapAsString = objectMapper.writeValueAsString(mapPreparedForJson);
         System.out.println(mapAsString);
     }

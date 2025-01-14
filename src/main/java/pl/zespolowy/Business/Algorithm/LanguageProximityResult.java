@@ -12,9 +12,9 @@ import java.util.List;
 
 @Getter
 @Setter
-@ToString(of = {"nameAbbreviation", "language1", "language2", "countedProximity", "numberOfWordsToNormalization"})
+@ToString(of = {"nameAbbr", "language1", "language2", "countedProximity", "numberOfWordsToNormalization"})
 public class LanguageProximityResult {
-    private final String nameAbbreviation;
+    private final String nameAbbr;
     private final Language language1;
     private final Language language2;
     private Integer countedProximity;
@@ -25,7 +25,7 @@ public class LanguageProximityResult {
     public LanguageProximityResult(Language language1, Language language2) {
         this.language1 = language1;
         this.language2 = language2;
-        this.nameAbbreviation = setNameAbbreviation(language1, language2);
+        this.nameAbbr = setNameAbbr(language1, language2);
         countedProximity = 0;
         numberOfWordsToNormalization = 0;
     }
@@ -38,7 +38,7 @@ public class LanguageProximityResult {
      * @param language2
      * @return String
      */
-    public String setNameAbbreviation(Language language1, Language language2) {
+    public String setNameAbbr(Language language1, Language language2) {
         return language1.getCode() + language2.getCode();
     }
 
@@ -81,6 +81,11 @@ public class LanguageProximityResult {
     }
 
     /**
+     * This method sets list of ResultTuples which contains
+     * calculated proximity, word in two langs as Word1 and Word2 and z-score
+     * and adds calculated proximity so it sums up to value of all words in this class
+     * as well as adds +1 to number counter
+     * number of occurrences to counter
      * @param proximity
      * @param anotherNumber
      */
