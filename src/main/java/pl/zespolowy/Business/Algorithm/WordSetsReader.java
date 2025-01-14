@@ -2,7 +2,7 @@ package pl.zespolowy.Business.Algorithm;
 
 import lombok.Getter;
 import lombok.Setter;
-import pl.zespolowy.WordSet;
+import pl.zespolowy.Words.WordSet;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,12 +17,13 @@ public class WordSetsReader {
     private final Map<String, WordSet> wordSets = new HashMap<>();
 
     public WordSetsReader(String s) {
+        // read WordSets from file
         initWordSets(s);
     }
 
     public void initWordSets(String path) {
-
         File dir = new File(path);
+
         if (dir.exists() && dir.isDirectory()) {
             String[] fileNames = dir.list();
 
@@ -39,7 +40,6 @@ public class WordSetsReader {
                     }
                     System.out.println(fileName);
                 }
-
             } else {
                 System.out.println("The current directory is empty or an error occurred.");
             }

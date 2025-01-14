@@ -28,7 +28,7 @@
         "enabled": true
     },
     {
-        "text": "HIV/AIDS",
+        "text": "HIV",
         "enabled": true
     },
     {
@@ -109,10 +109,6 @@
     },
     {
         "text": "Obesity",
-        "enabled": true
-    },
-    {
-        "text": "Tuberculosis",
         "enabled": true
     },
     {

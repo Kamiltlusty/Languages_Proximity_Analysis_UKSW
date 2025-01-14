@@ -60,15 +60,11 @@
         "enabled": true
     },
     {
-        "text": "Sideboard",
-        "enabled": true
-    },
-    {
-        "text": "Console table",
-        "enabled": true
-    },
-    {
         "text": "TV stand",
+        "enabled": true
+    },
+    {
+        "text": "Sideboard",
         "enabled": true
     },
     {
@@ -117,10 +113,6 @@
     },
     {
         "text": "Vanity",
-        "enabled": true
-    },
-    {
-        "text": "Hutch",
         "enabled": true
     },
     {

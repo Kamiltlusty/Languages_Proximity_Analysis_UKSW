@@ -3,8 +3,8 @@ package pl.zespolowy.Business.Algorithm;
 import lombok.Getter;
 import lombok.Setter;
 import pl.zespolowy.Language;
-import pl.zespolowy.Word;
-import pl.zespolowy.WordSet;
+import pl.zespolowy.Words.Word;
+import pl.zespolowy.Words.WordSet;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -20,54 +20,45 @@ public class WordSetsRegrouper {
 
     public WordSetsRegrouper(WordSetsTranslation wordSetsTranslation) {
         this.wordSetsTranslation = wordSetsTranslation;
-        convertToRegroupedMap();
+        regroup();
     }
 
-    public void convertToRegroupedMap() {
-        regruopedMap = wordSetsTranslation.getSetMapOfKeyStringAndValueMapLanguageWordSet().entrySet().stream()
+    /**
+     * This method regroups Map with Topic as key and Map of pairs (key = Language, val = WordSet) as value
+     * as a result we receive Map with key Topic and Set of Maps holding pairs (key = Language, val = Word)
+     * What happened here is that we divided WordSets to singular Words as in calculation method we will need
+     * to take one word in two languages and compare them
+     */
+    public void regroup() {
+        regruopedMap = wordSetsTranslation.getTopicLangWSmap().entrySet().stream()
                 .collect(Collectors.toMap(
                         Map.Entry::getKey,
-                        v -> regroupGivenMapsToSetOfMapsOfLanguageAndWords(v.getValue())
+                        v -> mapToSet(v.getValue())
                 ));
     }
-    /**
-     *
-     */
-    public Set<Map<Language, Word>> regroupGivenMapsToSetOfMapsOfLanguageAndWords(Map<Language, WordSet> wordSetsInDifferentLanguages) {
+
+    public Set<Map<Language, Word>> mapToSet(Map<Language, WordSet> wordSetsInDifferentLanguages) {
         Set<Map<Language, Word>> mapSet = new HashSet<>();
-        int size = findSmallestWordSet(wordSetsInDifferentLanguages);
-        // przechodzę po każdym wordsecie w różnych językach i biorę np. pierwsze słowo z każdego języka czyli to samo słowo i robie z tego mape jezyk słowo w tym jezyku
+        // find wordSet size
+        int size = wordSetsInDifferentLanguages.values().stream()
+                .findFirst()
+                .map(w -> w.getWords().size())
+                .orElse(-1);
+
+        // go through each wordSet and take i-th Word
         for (int i = 0; i < size; i++) {
-            int finalI = i;
-            Map<Language, Word> languageWordMap = getLanguageWordMap(wordSetsInDifferentLanguages, finalI);
+            Map<Language, Word> languageWordMap = getLanguageWordMap(wordSetsInDifferentLanguages, i);
             mapSet.add(languageWordMap);
         }
         return mapSet;
     }
+    
 
-    private static int findSmallestWordSet(Map<Language, WordSet> wordSetsInDifferentLanguages) {
-        int leastLong = 100;
-        for (var values : wordSetsInDifferentLanguages.values()) {
-            if (values.getWords().size()-1 < leastLong) {
-                leastLong = values.getWords().size()-1;
-            }
-        }
-
-        return leastLong;
-    }
-
-    /**
-     *
-     * @param wordSetsInDifferentLanguages
-     * @param finalI
-     * @return
-     */
-    private static Map<Language, Word> getLanguageWordMap(Map<Language, WordSet> wordSetsInDifferentLanguages, int finalI) {
-        Map<Language, Word> languageWordMap = wordSetsInDifferentLanguages.entrySet().stream()
+    private Map<Language, Word> getLanguageWordMap(Map<Language, WordSet> wordSetsInDifferentLanguages, int i) {
+        return wordSetsInDifferentLanguages.entrySet().stream()
                 .collect(Collectors.toMap(
                         Map.Entry::getKey,
-                        e -> e.getValue().getWords().get(finalI)
+                        e -> e.getValue().getWords().get(i)
                 ));
-        return languageWordMap;
     }
 }

@@ -190,9 +190,5 @@
     {
         "text": "kidney",
         "enabled": true
-    },
-    {
-        "text": "elbow",
-        "enabled": true
     }
 ]

@@ -4,7 +4,10 @@ package pl.zespolowy.Business.Algorithm;
 import lombok.Getter;
 import pl.zespolowy.Language;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @Getter
@@ -22,7 +25,7 @@ public class WordsProximityNormalizer {
     }
 
     public void getLPRResultMapByTopic() {
-        List<Language> languageList = wordSetsTranslation.getLanguageList();
+        List<Language> languageList = wordSetsTranslation.getLangList();
 
         for (var topic : countedProximityBetweenWords.entrySet()) {
             String key = topic.getKey();
@@ -45,22 +48,25 @@ public class WordsProximityNormalizer {
     }
 
     public void unpackMapOfTopics() {
-        var mapOfTopics = languageSimilarityCalculator.getProximityBetweenTwoLanguagesMapByTopic();
+        var mapOfTopics = languageSimilarityCalculator.getProximityOfTwoLangsByTopic();
         for (var map : mapOfTopics.entrySet()) {
             var topicKey = map.getKey();
             var innerMap = map.getValue();
+            // removing outliers
+            innerMap.values().forEach(LanguageProximityResult::removeOutliers);
             var mapOfMaps = normalizationBetweenWords(innerMap);
 
             countedProximityBetweenWords.put(topicKey, mapOfMaps);
         }
     }
+
     public Map<LanguageProximityResult, Double> normalizationBetweenWords(Map<String, LanguageProximityResult> resultMap) {
         var innerMap = resultMap.values().stream()
                 .collect(Collectors.toMap(
                         lpr -> lpr,
                         lpr -> {
-                            Double val1 = Double.valueOf(lpr.getCountedProximity().get());
-                            Double val2 = Double.valueOf(lpr.getNumberOfWordsToNormalization().get());
+                            Double val1 = Double.valueOf(lpr.getCountedProximity());
+                            Double val2 = Double.valueOf(lpr.getNumberOfWordsToNormalization());
                             return val1 / val2;
                         }
                 ));
@@ -80,7 +86,7 @@ public class WordsProximityNormalizer {
     }
 
     private Double normalize(Double value, Double xmax, Double xmin) {
-        return (value - xmin)/(xmax - xmin);
+        return (value - xmin) / (xmax - xmin);
     }
 
     private Double findMaxValue(Collection<Double> results) {
@@ -90,6 +96,7 @@ public class WordsProximityNormalizer {
         }
         return maxVal;
     }
+
     private Double findMinValue(Collection<Double> results) {
         Double minVal = Double.valueOf(1000);
         for (var val : results) {

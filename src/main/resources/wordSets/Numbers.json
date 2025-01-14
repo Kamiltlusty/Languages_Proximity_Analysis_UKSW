@@ -68,11 +68,11 @@
         "enabled": true
     },
     {
-        "text": "eighteen",
+        "text": "twenty-six",
         "enabled": true
     },
     {
-        "text": "nineteen",
+        "text": "eighteen",
         "enabled": true
     },
     {
@@ -80,11 +80,11 @@
         "enabled": true
     },
     {
-        "text": "twenty-one",
+        "text": "nineteen",
         "enabled": true
     },
     {
-        "text": "twenty-two",
+        "text": "twenty-one",
         "enabled": true
     },
     {
@@ -92,19 +92,15 @@
         "enabled": true
     },
     {
+        "text": "twenty-two",
+        "enabled": true
+    },
+    {
         "text": "twenty-four",
         "enabled": true
     },
     {
-        "text": "twenty-five",
-        "enabled": true
-    },
-    {
-        "text": "twenty-six",
-        "enabled": true
-    },
-    {
-        "text": "twenty-seven",
+        "text": "sixty-nine",
         "enabled": true
     },
     {
@@ -112,15 +108,7 @@
         "enabled": true
     },
     {
-        "text": "twenty-nine",
-        "enabled": true
-    },
-    {
         "text": "thirty",
-        "enabled": true
-    },
-    {
-        "text": "sixty-nine",
         "enabled": true
     },
     {
@@ -132,7 +120,15 @@
         "enabled": true
     },
     {
+        "text": "twenty-seven",
+        "enabled": true
+    },
+    {
         "text": "six hundred ninety",
+        "enabled": true
+    },
+    {
+        "text": "twenty-five",
         "enabled": true
     },
     {
@@ -181,10 +177,6 @@
     },
     {
         "text": "one million",
-        "enabled": true
-    },
-    {
-        "text": "twelve hundred",
         "enabled": true
     },
     {

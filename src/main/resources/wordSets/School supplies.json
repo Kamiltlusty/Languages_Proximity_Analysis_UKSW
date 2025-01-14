@@ -52,19 +52,11 @@
         "enabled": true
     },
     {
-        "text": "Folder",
-        "enabled": true
-    },
-    {
         "text": "Calculator",
         "enabled": true
     },
     {
         "text": "Crayons",
-        "enabled": true
-    },
-    {
-        "text": "Colored Pencils",
         "enabled": true
     },
     {
@@ -96,15 +88,15 @@
         "enabled": true
     },
     {
-        "text": "Post-it Notes",
-        "enabled": true
-    },
-    {
         "text": "Tape",
         "enabled": true
     },
     {
         "text": "Compass",
+        "enabled": true
+    },
+    {
+        "text": "Post-it Notes",
         "enabled": true
     },
     {

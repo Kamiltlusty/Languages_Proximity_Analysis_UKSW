@@ -26,7 +26,23 @@ public class Translation {
         this.target = target;
 
         if (source.length != target.length) {
-            System.out.println("Invalid target length.");
+            System.out.println("Invalid target length (source=" + source.length + ", target=" + target.length + ").");
+
+            int max = source.length;
+            if (target.length > max) { max = target.length; }
+            for (int i = 0 ; i < max; i++) {
+                String s = "";
+                if (i < source.length) {
+                    s = source[i];
+                }
+                String t = "";
+                if (i < target.length) {
+                    t = target[i];
+                }
+
+                System.out.println("[" + s + "] = " + t);
+            }
+
             return false;
         }
 
@@ -199,5 +215,22 @@ public class Translation {
         return sb.toString();
     }
 
+    public String targetTextInCommas() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        int i = 0;
+        for (var key : translations.keySet()) {
+            String value = translations.get(key);
+            sb.append("\"");
+            sb.append(value);
+            sb.append("\"");
+            if (i < translations.size() - 1) {
+                sb.append(", ");
+            }
+            i++;
+        }
+        sb.append("]");
+        return sb.toString();
+    }
 }
 

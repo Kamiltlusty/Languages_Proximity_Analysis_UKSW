@@ -45,7 +45,7 @@ dependencies {
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine"
 
     // Web driver
-    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.26.0'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.27.0'
 
     // Algorytm
     implementation "org.apache.commons:commons-text:${apacheCommonsText}"

@@ -20,6 +20,7 @@ public class DeepLTranslator extends Translator {
                 sb.append(", ");
             }
         }
+        sb.append(".");
         return sb.toString();
     }
 
@@ -27,8 +28,11 @@ public class DeepLTranslator extends Translator {
         String content = format(wordSet);
 
 
+
         String baseUrl = "https://www.deepl.com/" + sourceLanguage + "/translator#" + sourceLanguage + "/" + targetLanguage + "/" + content;
         driver.get(baseUrl);
+
+        System.out.println(content);
 
         //System.out.println("get");
         ////var inputs = driver.findElements(By.name("source"));
@@ -45,11 +49,16 @@ public class DeepLTranslator extends Translator {
                 Thread.sleep(10); // Sleep for 10 milliseconds
                 var output = driver.findElement(By.name("target"));
                 if (output.getText().length() > 50) {
+
                     String[] source = content.split(": ")[1].replace(".", "").toLowerCase().split(", ");
                     String[] target = output.getText().split(": ")[1].replace(".", "").toLowerCase().split(", ");
+                    String desc = output.getText().split(": ")[0];
+                    System.out.println("DESC: \"" + desc + "\"");
                     return new Translation(source, target);
                 }
-            } catch (Exception _) {}
+            } catch (Exception _) {
+
+            }
         }
     }
 

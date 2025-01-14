@@ -4,10 +4,6 @@
         "enabled": true
     },
     {
-        "text": "Subway",
-        "enabled": true
-    },
-    {
         "text": "Bus",
         "enabled": true
     },
@@ -33,6 +29,10 @@
     },
     {
         "text": "Ferry",
+        "enabled": true
+    },
+    {
+        "text": "Subway",
         "enabled": true
     },
     {
@@ -145,10 +145,6 @@
     },
     {
         "text": "Tuk-tuk",
-        "enabled": true
-    },
-    {
-        "text": "Cart",
         "enabled": true
     },
     {

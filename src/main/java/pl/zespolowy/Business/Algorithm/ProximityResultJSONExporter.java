@@ -7,7 +7,7 @@ import lombok.Getter;
 @Getter
 public class ProximityResultJSONExporter {
     private final WordsProximityNormalizer wordsProximityNormalizer;
-    private final ObjectMapper objectMapper  = new ObjectMapper();
+    private final ObjectMapper objectMapper = new ObjectMapper();
 
     public ProximityResultJSONExporter(WordsProximityNormalizer wordsProximityNormalizer) {
         this.wordsProximityNormalizer = wordsProximityNormalizer;

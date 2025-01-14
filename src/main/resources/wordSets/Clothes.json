@@ -28,11 +28,11 @@
         "enabled": true
     },
     {
-        "text": "Dress",
+        "text": "Shorts",
         "enabled": true
     },
     {
-        "text": "Shorts",
+        "text": "Dress",
         "enabled": true
     },
     {
@@ -169,10 +169,6 @@
     },
     {
         "text": "Shawl",
-        "enabled": true
-    },
-    {
-        "text": "Camisole",
         "enabled": true
     },
     {

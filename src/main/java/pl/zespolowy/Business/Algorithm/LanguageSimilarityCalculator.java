@@ -4,7 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.apache.commons.text.similarity.LevenshteinDistance;
 import pl.zespolowy.Language;
-import pl.zespolowy.Word;
+import pl.zespolowy.Words.Word;
 
 import java.util.HashMap;
 import java.util.List;
@@ -15,80 +15,70 @@ import java.util.Map;
 public final class LanguageSimilarityCalculator {
     private LevenshteinDistance levenshteinDistance = new LevenshteinDistance();
     private WordSetsRegrouper wordSetsRegrouper;
-    private Map<String, Map<String, LanguageProximityResult>> proximityBetweenTwoLanguagesMapByTopic = new HashMap<>();
+    private Map<String, Map<String, LanguageProximityResult>> proximityOfTwoLangsByTopic = new HashMap<>();
 
     public LanguageSimilarityCalculator(WordSetsRegrouper wordSetsRegrouper) {
         this.wordSetsRegrouper = wordSetsRegrouper;
     }
 
     /**
-     * obliczenie podobienstwa algorytmem levensteina pomiedzy slowem w roznych jezykach
-     *
+     * This method loops through regrouped map {
+     * regrouped map = (result we receive is Map with key Topic and Set of Maps holding pairs (key = Language, val = Word)
+     * from class WordSetsRegrouper }
+     * 1. creates Language Proximity Result classes for each two Languages in every topic and puts it to Map with
+     * combined codes of these two Languages as key and LanguageProximityResult class as value
+     * 2. counts levenshteinDistance for each pair of word in two Languages and adds the result to Language Proximity Result class
+     * 3. searches for adequate LanguageProximityResult and when finds, adds counted value to found class
      */
-    public void countingProximityForWordInDifferentLanguagesAndPuttingResultToLanguageProximityResult() {
-        // mapa (ktora przechowuje 1 set (podzielony na rozne slowa) map ktore maja pary jezyk słowo w tym jezyku (to samo slowo)) pogrupowana po tematach
+    public void countProximityAndFillLPRClasses() {
         var mapOfTopics = wordSetsRegrouper.getRegruopedMap();
-        Map<String, LanguageProximityResult> proximityBetweenTwoLanguagesMap;
+        Map<String, LanguageProximityResult> proximityOfTwoLangsMap;
 
         for (var map : mapOfTopics.entrySet()) {
-            proximityBetweenTwoLanguagesMap = makeSetOfProximityBetweenTwoLanguages(wordSetsRegrouper.getWordSetsTranslation().getLanguageList());
+            proximityOfTwoLangsMap = createLPRClasses(wordSetsRegrouper.getWordSetsTranslation().getLangList());
             for (var set : map.getValue()) {
-                loopThroughMaps(set, proximityBetweenTwoLanguagesMap);
+                count(set, proximityOfTwoLangsMap);
             }
-            proximityBetweenTwoLanguagesMapByTopic.put(map.getKey(), proximityBetweenTwoLanguagesMap);
+            proximityOfTwoLangsByTopic.put(map.getKey(), proximityOfTwoLangsMap);
         }
     }
 
-    /**
-     *
-     * @param set
-     * @param proximityBetweenTwoLanguagesMap
-     */
-    private void loopThroughMaps(Map<Language, Word> set, Map<String, LanguageProximityResult> proximityBetweenTwoLanguagesMap) {
+    private void count(Map<Language, Word> set, Map<String, LanguageProximityResult> proximityBetweenTwoLanguagesMap) {
         for (Map.Entry<Language, Word> outerEntry : set.entrySet()) {
             Language outerKey = outerEntry.getKey();
             Word outerValue = outerEntry.getValue();
 
             var innerIterator = set.entrySet().iterator();
-            // pomija elementy do outerEntry
-            while (innerIterator.hasNext() && !innerIterator.next().equals(outerEntry)) {}
+            // skips elems to outer Entry
+            while (innerIterator.hasNext() && !innerIterator.next().equals(outerEntry)) {
+            }
 
             while (innerIterator.hasNext()) {
                 var innerEntry = innerIterator.next();
                 Language innerKey = innerEntry.getKey();
                 Word innerValue = innerEntry.getValue();
-                // obliczenie podobienstwa
+                // proximity calculation
                 Integer countedDistance = levenshteinDistance.apply(outerValue.getText(), innerValue.getText());
-                putResultToLanguageProximityResult(outerKey, innerKey, proximityBetweenTwoLanguagesMap, countedDistance);
+                putResultToLPR(outerKey, innerKey, proximityBetweenTwoLanguagesMap, countedDistance, outerValue, innerValue);
             }
         }
     }
 
-    /**
-     *
-     * @param outerKey
-     * @param innerKey
-     * @param proximityBetweenTwoLanguagesMap
-     * @param countedDistance
-     */
-    private static void putResultToLanguageProximityResult(Language outerKey, Language innerKey, Map<String, LanguageProximityResult> proximityBetweenTwoLanguagesMap, Integer countedDistance) {
-        String languagesAbbreviation = outerKey.getCode() + innerKey.getCode();
-        String languagesAbbreviationReversed = innerKey.getCode() + outerKey.getCode();
+    private void putResultToLPR(Language outerKey, Language innerKey, Map<String, LanguageProximityResult> proximityOfTwoLangsMap, Integer countedDistance, Word word1, Word word2) {
+        String langsAbbr = outerKey.getCode() + innerKey.getCode();
+        String langsAbbrReversed = innerKey.getCode() + outerKey.getCode();
 
-        if (proximityBetweenTwoLanguagesMap.containsKey(languagesAbbreviation)) {
-            proximityBetweenTwoLanguagesMap.get(languagesAbbreviation).countedProximityAndNumberOfWordsToNormalizationIncrease(countedDistance, 1);
-        } else if (proximityBetweenTwoLanguagesMap.containsKey(languagesAbbreviationReversed)) {
-            proximityBetweenTwoLanguagesMap.get(languagesAbbreviationReversed).countedProximityAndNumberOfWordsToNormalizationIncrease(countedDistance, 1);
+        // check whether language abbreviations newly created are equal with abbreviations in earlier created LPR classes and add result
+        if (proximityOfTwoLangsMap.containsKey(langsAbbr)) {
+            proximityOfTwoLangsMap.get(langsAbbr).updateLPR(countedDistance, 1, word1, word2);
+        } else if (proximityOfTwoLangsMap.containsKey(langsAbbrReversed)) {
+            proximityOfTwoLangsMap.get(langsAbbrReversed).updateLPR(countedDistance, 1, word1, word2);
         } else {
             System.out.println("LanguageProximityError: Abbreviation not found, line: 68");
         }
     }
 
-    /**
-     *
-     * @return Set<ProximityBetweenTwoLanguages>
-     */
-    public Map<String, LanguageProximityResult> makeSetOfProximityBetweenTwoLanguages(List<Language> languages) {
+    private Map<String, LanguageProximityResult> createLPRClasses(List<Language> languages) {
         Map<String, LanguageProximityResult> map = new HashMap<>();
         for (int i = 0; i < languages.size(); i++) {
             for (int j = i + 1; j < languages.size(); j++) {

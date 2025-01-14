@@ -132,10 +132,6 @@
         "enabled": true
     },
     {
-        "text": "Chef",
-        "enabled": true
-    },
-    {
         "text": "Bartender",
         "enabled": true
     },
@@ -185,10 +181,6 @@
     },
     {
         "text": "Entrepreneur",
-        "enabled": true
-    },
-    {
-        "text": "Scientist",
         "enabled": true
     },
     {
