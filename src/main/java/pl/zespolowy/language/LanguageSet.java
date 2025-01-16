@@ -1,13 +1,12 @@
 package pl.zespolowy.language;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import pl.zespolowy.Language;
 
 import java.io.IOException;
 import java.util.List;
 
 public class LanguageSet {
-    private List<pl.zespolowy.Language> languages;
+    private List<Language> languages;
 
     public LanguageSet(String jsonString) {
         Deserialize(jsonString);
@@ -16,21 +15,21 @@ public class LanguageSet {
     private void Deserialize(String jsonString) {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            languages = objectMapper.readValue(jsonString, objectMapper.getTypeFactory().constructCollectionType(List.class, pl.zespolowy.Language.class));
+            languages = objectMapper.readValue(jsonString, objectMapper.getTypeFactory().constructCollectionType(List.class, Language.class));
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public List<pl.zespolowy.Language> getLanguages() {
+    public List<Language> getLanguages() {
         return languages;
     }
 
-    public void addLanguage(pl.zespolowy.Language language) {
+    public void addLanguage(Language language) {
         languages.add(language);
     }
 
-    public pl.zespolowy.Language get(int index) {
+    public Language get(int index) {
         return this.languages.get(index);
     }
 

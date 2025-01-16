@@ -2,7 +2,7 @@ package pl.zespolowy.Business.Algorithm;
 
 
 import lombok.Getter;
-import pl.zespolowy.Language;
+import pl.zespolowy.language.Language;
 
 import java.util.Collection;
 import java.util.HashMap;

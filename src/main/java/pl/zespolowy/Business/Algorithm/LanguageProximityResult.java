@@ -3,7 +3,7 @@ package pl.zespolowy.Business.Algorithm;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-import pl.zespolowy.Language;
+import pl.zespolowy.language.Language;
 import pl.zespolowy.Words.Word;
 
 import java.util.ArrayList;

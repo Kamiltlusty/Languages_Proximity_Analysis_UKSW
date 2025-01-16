@@ -1,5 +1,9 @@
 package pl.zespolowy.language;
 
+import com.fasterxml.jackson.annotation.JsonValue;
+import lombok.ToString;
+
+@ToString(of = {"name", "code", "enabled"})
 public class Language {
     private String name;
     private String code;
@@ -18,6 +22,9 @@ public class Language {
         this.code = code;
         this.enabled = true;
     }
+
+    @JsonValue
+    public String toJson() {return name;}
 
     public String getName() {
         return name;

@@ -133,10 +133,10 @@ public class MainSceneController {
                 System.out.println(wordSet.getTitle());
                 Translation t = translator.translate(wordSet, "en", "es");
                 System.out.println(t.targetText());
-                //t.writeJson("Cache\\Translation\\Polish\\", "Fruits.json");
+                t.writeJson("Cache\\Translation\\Polish\\", "Fruits.json");
 
-                //Translation t2 = translator.translate(wordSet, "en", "de");
-                //t2.writeJson("Cache\\Translation\\German\\", "Fruits.json");
+                Translation t2 = translator.translate(wordSet, "en", "de");
+                t2.writeJson("Cache\\Translation\\German\\", "Fruits.json");
             }
         }
 
